@@ -1,0 +1,66 @@
+body{ 
+    margin: 0; 
+}
+
+header{
+    background-color: #DFCC47;
+    display: flex; 
+    align-items: center;
+    color: white; 
+    height: 20vh; 
+    padding-left: 10%;
+    padding-right: 10%; 
+    font-family: "Sanchez", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/*Styling for logo*/
+.logo{
+    display: flex; 
+    justify-content: left;
+    align-items: center;   
+    height: 80%; 
+    width: 60%;
+}
+
+.img_container{
+    height: 100%; 
+    margin-right: 2%; 
+}
+
+.logo .img_container > img{
+    height: 100%; 
+}
+
+.brand_container{
+    height: 100%; 
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+}
+
+.title{
+    font-size: 64px;
+}
+
+.slogan{
+    font-size: 20px; 
+    margin-left: 10px; 
+}
+
+/*Styling for nav buttons*/
+.nav{
+     
+    display: flex; 
+    justify-content: space-around;
+    width: 40%; 
+}
+
+.nav_btn{
+    font-size: 18px;
+    font-family: "Sanchez", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
