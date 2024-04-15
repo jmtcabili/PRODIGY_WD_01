@@ -1,2 +1,2 @@
 # PRODIGY_WD_01
-Webpage to help clients connect with nearby child development centers.
+A responsive landing page for a site that connects clients with nearby child development centers.
