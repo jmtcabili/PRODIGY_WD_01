@@ -4,11 +4,13 @@ body{
 }
 
 header{
+    height: 15vh; 
+}
+header, footer{
     background-color: #DFCC47;
     display: flex; 
     align-items: center;
-    color: white; 
-    height: 20vh; 
+    color: white;  
     font-family: "Sanchez", serif;
     font-weight: 400;
     font-style: normal;
@@ -29,14 +31,17 @@ header{
 }
 
 .logo .img_container > img{
-    height: 100%; 
+    height: 100%;
+    
 }
 
 .brand_container{
-    height: 100%; 
+    height: auto;
+    width: auto; 
     display: flex; 
     flex-direction: column;
     justify-content: center;
+
 }
 
 .title{
@@ -79,30 +84,79 @@ header{
 .content{
     display: flex; 
     flex-direction: row;
+    justify-content: center;
     height: 100vh; 
-    width: 100vw; 
 }
 
 .grid{
-    padding-left: 10%;
-    padding-right: 10%; 
+    padding-left: 12.5%;
+    padding-right: 12.5%; 
 }
 
-.left{
-    width: 39%; 
-
+.section{
+    margin-top: 8%; 
+    margin-bottom: 8%; 
+    width: 45%; 
 }
 
 .mid{
-    margin-top: 4%;
-    margin-bottom: 4%; 
-    content:"";
-    z-index: -1;
-    width: 0px; 
-    border: gray solid 1px;
+    margin: 4%; 
+    border: gray solid 1.5px;
 }
 
-.right{
-    width: 39%; 
+.box{
+    height: 45%;  
+    margin-bottom: 10%;   
+    display: flex; 
+    align-items: center;
+}
+.text{
+    height: 45%; 
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 1.5em;
+    font-weight: 500;
+    font-style: normal;
+    color: #484747; 
+    overflow: hidden;
+    overflow-y: auto; 
+    word-wrap: break-word; 
+}
+
+.first > p{
+    text-align: right; 
+}
+.second > p{
+    text-align: left;
+}
+
+.box > img{
+    height: 100%; 
+    width: 100%;
+    border-radius: 10px;
+    border: dotted white 0.5px; 
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+footer{
+    height: 15vh; 
+    padding-top: 2.5%; 
+    padding-bottom: 2.5%; 
+}
+
+.footer_content{
+    height: 95%; 
+    width: 100%; 
+    display: flex; 
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border: solid black;
+}
+
+.footer_container{
+    border: solid white; 
+    height: 100%; 
+    width: 30%; 
 }
 
