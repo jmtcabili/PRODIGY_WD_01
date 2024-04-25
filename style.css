@@ -4,7 +4,12 @@ body{
 }
 
 header{
-    height: 15vh; 
+    height: 20vh; 
+}
+.sanchez{
+    font-family: "Sanchez", serif;
+    font-weight: 400;
+    font-style: normal;
 }
 header, footer{
     background-color: #DFCC47;
@@ -69,7 +74,7 @@ header, footer{
 }
 
 .sliding_panel{
-    height: 50vh; 
+    height: 80vh; 
     background-image: url("assets/sample\ panel\ pic.jpg");
     background-size: cover;
     background-position-y: center;
@@ -89,8 +94,8 @@ header, footer{
 }
 
 .grid{
-    padding-left: 12.5%;
-    padding-right: 12.5%; 
+    padding-left: 10%;
+    padding-right: 10%; 
 }
 
 .section{
@@ -135,12 +140,49 @@ header, footer{
     width: 100%;
     border-radius: 10px;
     border: dotted white 0.5px; 
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+.caption{
+    height: 15vh; 
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 2em;
+    color: #484747; 
+}
+.interactive_icons{
+    height: 40vh;
+    display: flex;
+    flex-direction: row;
+}
+
+.ii_container{
+    width: 33.33333%; 
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white; 
+}
+
+.ii_container img{
+    height: 30%; 
+    filter: invert(100%) sepia(4%) saturate(7462%) hue-rotate(230deg) brightness(114%) contrast(103%);
+}
+
+.green{
+    background-color: #507B5C;
+}
+.blue{
+    background-color: #367A85;
+}
+.indigo{
+    background-color: #112227;
 }
 
 footer{
     height: 15vh; 
-    padding-top: 2.5%; 
     padding-bottom: 2.5%; 
 }
 
@@ -149,14 +191,44 @@ footer{
     width: 100%; 
     display: flex; 
     flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    border: solid black;
+    justify-content: space-around;
+    align-items: baseline;
 }
 
 .footer_container{
-    border: solid white; 
     height: 100%; 
     width: 30%; 
+    max-width: 300px;
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    font-family: "Sanchez", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+.footer_container > a{
+    color: white; 
+    font-size: 1.5em;
+}
+
+.icons{
+    display: flex; 
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.icons img{
+    height: 30px; 
+    margin-left: 10px; 
+    margin-right: 10px; 
+    filter: invert(100%) sepia(4%) saturate(7462%) hue-rotate(230deg) brightness(114%) contrast(103%);
+}
+
+.last{
+    font-size: 0.75em;
 }
 
