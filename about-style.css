@@ -1,0 +1,22 @@
+article{
+    height: 59.8vh; 
+    display: flex; 
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 40%; 
+    width: 40%; 
+    text-align: center;
+    
+}
+
+.box > a{
+    font-size: 2em;
+}

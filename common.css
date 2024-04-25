@@ -1,0 +1,152 @@
+body{ 
+    margin: 0; 
+    background-color: #FFFBE0;
+}
+
+header{
+    height: 20vh; 
+    position: sticky; 
+    top: 0; 
+    z-index: 100;
+}
+.sanchez{
+    font-family: "Sanchez", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+header, footer{
+    background-color: #DFCC47;
+    display: flex; 
+    align-items: center;
+    color: white;  
+    font-family: "Sanchez", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/*Styling for logo*/
+.logo{
+    display: flex; 
+    justify-content: left;
+    align-items: center;   
+    height: 80%; 
+    width: 60%;
+}
+
+.img_container{
+    height: 100%; 
+    margin-right: 2%; 
+}
+
+.logo .img_container > img{
+    height: 100%;   
+}
+
+.brand_container{
+    height: auto;
+    width: auto; 
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.title{
+    font-size: 64px;
+}
+
+.slogan{
+    font-size: 20px; 
+    margin-left: 10px; 
+}
+
+/*Styling for nav buttons*/
+.nav{
+    display: flex; 
+    justify-content: space-around;
+    width: 40%; 
+}
+
+.nav_btn{
+    font-size: 18px;
+    font-family: "Sanchez", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.nav_btn > a{
+    color: white; 
+    text-decoration: none; 
+}
+
+.nav_btn > a:visited{
+    color: white; 
+}
+
+.line{
+    position: relative; 
+    width: 0%; 
+    transition: all 0.3s ease-in-out; 
+    border: solid #DFCC47 1px
+}
+.nav_btn:hover .line{
+    border: solid white 1px;
+    width:100%; 
+}
+
+
+
+.grid{
+    padding-left: 10%;
+    padding-right: 10%; 
+}
+
+footer{
+    height: 15vh; 
+    padding-bottom: 2.5%; 
+}
+
+.footer_content{
+    height: 95%; 
+    width: 100%; 
+    display: flex; 
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: baseline;
+}
+
+.footer_container{
+    height: 100%; 
+    width: 30%; 
+    max-width: 300px;
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    font-family: "Sanchez", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+.footer_container > a{
+    color: white; 
+    font-size: 1.5em;
+}
+
+.icons{
+    display: flex; 
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.icons img{
+    height: 30px; 
+    margin-left: 10px; 
+    margin-right: 10px; 
+    filter: invert(100%) sepia(4%) saturate(7462%) hue-rotate(230deg) brightness(114%) contrast(103%);
+}
+
+.last{
+    font-size: 0.75em;
+}
