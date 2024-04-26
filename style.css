@@ -36,7 +36,7 @@
 
 .p1{
     bottom: 50%; 
-    left: 5%; 
+    left: 19%; 
     opacity: 0;
     transition: opacity 0.5s ease-in;
 }
@@ -48,7 +48,7 @@
 }
 .p3{
     bottom: 50%; 
-    right: 5%; 
+    right: 19%; 
     opacity: 0;
     transition: opacity 0.5s ease-in 0.3s;
 }
@@ -154,6 +154,55 @@
 .ii_container img{
     height: 30%; 
     filter: invert(100%) sepia(4%) saturate(7462%) hue-rotate(230deg) brightness(114%) contrast(103%);
+    transition: transform 0.8s ease; 
+    z-index: 2;
+}
+
+.ii_container > h2{
+    z-index:2;
+    transition: transform 0.8s ease;
+}
+
+.ii_container:hover img{
+    transform: translateY(-25%);
+}
+.ii_container:hover h2{
+    transform: translateY(-50%);
+}
+
+.ii_container:hover .highlight1, 
+.ii_container:hover .highlight2, 
+.ii_container:hover .highlight3{
+    width: 33.333%; 
+    z-index: 1;
+}
+
+.highlight1{
+    position:absolute; 
+    left:0%;
+    height: 40vh; 
+    width: 0vw;
+    background-color: #60926f;
+    z-index: 0; 
+    transition: width 0.6s; 
+}
+.highlight2{
+    position:absolute; 
+    left:33.33%;
+    height: 40vh; 
+    width: 0vw;
+    background-color: #42929e;
+    z-index: 0; 
+    transition: width 0.6s; 
+}
+.highlight3{
+    position:absolute; 
+    left:66.67%;
+    height: 40vh; 
+    width: 0vw;
+    background-color: #162b31;
+    z-index: 0; 
+    transition: width 0.6s; 
 }
 
 .green{
