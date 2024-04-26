@@ -85,7 +85,7 @@ header, footer{
 .line{
     position: relative; 
     width: 0%; 
-    transition: all 0.3s ease-in-out; 
+    transition: all 0.3s ease; 
     border: solid #DFCC47 1px
 }
 .nav_btn:hover .line{
