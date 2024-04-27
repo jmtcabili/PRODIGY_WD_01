@@ -99,6 +99,7 @@
     margin-bottom: 10%;   
     display: flex; 
     align-items: center;
+    opacity: 0;
 }
 .text{
     height: 45%; 
@@ -154,13 +155,13 @@
 .ii_container img{
     height: 30%; 
     filter: invert(100%) sepia(4%) saturate(7462%) hue-rotate(230deg) brightness(114%) contrast(103%);
-    transition: transform 0.8s ease; 
+    transition: transform 0.6s ease; 
     z-index: 2;
 }
 
 .ii_container > h2{
     z-index:2;
-    transition: transform 0.8s ease;
+    transition: transform 0.6s ease;
 }
 
 .ii_container:hover img{
@@ -173,36 +174,38 @@
 .ii_container:hover .highlight1, 
 .ii_container:hover .highlight2, 
 .ii_container:hover .highlight3{
-    width: 33.333%; 
+    height: 40vh;
     z-index: 1;
 }
 
 .highlight1{
     position:absolute; 
-    left:0%;
-    height: 40vh; 
-    width: 0vw;
+    bottom:-40vh;
+    height: 0vh; 
+    width: 33.333%;
     background-color: #60926f;
-    z-index: 0; 
-    transition: width 0.6s; 
+    z-index: 1; 
+    transition: height 0.6s; 
 }
 .highlight2{
     position:absolute; 
+    bottom: -40vh;
     left:33.33%;
-    height: 40vh; 
-    width: 0vw;
+    height: 0; 
+    width: 33.333%;
     background-color: #42929e;
     z-index: 0; 
-    transition: width 0.6s; 
+    transition: height 0.6s; 
 }
 .highlight3{
     position:absolute; 
+    bottom: -40vh;
     left:66.67%;
-    height: 40vh; 
-    width: 0vw;
+    height: 0vh; 
+    width: 33.333%;
     background-color: #162b31;
     z-index: 0; 
-    transition: width 0.6s; 
+    transition: height 0.6s; 
 }
 
 .green{
@@ -216,3 +219,21 @@
 }
 
 
+.animate1 {
+    position: relative;
+    animation: animate1 1s ease-in-out 0.3s forwards;
+  }
+  
+  @keyframes animate1 {
+    0%   {right: 20%; opacity: 0.1;}
+    100% {right: 0; opacity: 1;}
+  }
+.animate2 {
+    position: relative;
+    animation: animate2 1s ease-in-out 0.3s forwards;
+}
+
+@keyframes animate2 {
+    0%   {left: 20%; opacity: 0.1;}
+    100% {left: 0; opacity: 1;}
+}
